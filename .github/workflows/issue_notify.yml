@@ -31,7 +31,7 @@ jobs:
     if: needs.get-keyword.outputs.level != 'Undefined'
     runs-on: ubuntu-latest
       # environment: ${{ needs.get-keyword.outputs.level }}
-     strategy:
+    strategy:
       matrix:
         environment: ["${{ needs.get-keyword.outputs.level }}"]
     environment: ${{ matrix.environment }}
