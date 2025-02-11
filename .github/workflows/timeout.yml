@@ -8,9 +8,9 @@ jobs:
     steps:
     - name: loop-for-1-minute
       run: |
-        count = 0
+        count=0
         while true; do
-          echo 'seconds: $count'
+          echo "seconds: $count"
           count = $((count+1))
           sleep 1 
         done
