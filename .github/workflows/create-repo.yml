@@ -29,22 +29,9 @@ jobs:
         gh repo create junho-action/${{ inputs.prefix }}-${{ inputs.name }} --public --add-readme
     - name: slack
       if: always()
-      uses: slackapi/slack-github-action@v1.24.0
+      uses: slackapi/slack-github-action@v2.0.0
       with:
         payload: |
           {
-            "attachments": [ 
-              {
-                "pretext": "create repo result",
-                "color": "28a745",
-                "fields": [
-                  {
-                    "title":"create repo result ${{ steps.create-repo.outcome }}",
-                    "short": true,
-                    "value": "${{ inputs.prefix }}-${{ inputs.name }}"
-                  }
-                ]
-              }
-            ]    
+            "foo": "bar"
           }
-
