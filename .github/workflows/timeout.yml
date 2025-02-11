@@ -4,7 +4,7 @@ on: push
 jobs:
   timeout:
     runs-on: ubuntu-latest
-    timeout-minute: 1
+    timeout-minutes: 1
     steps:
     - name: loop-for-1-minute
       run: |
