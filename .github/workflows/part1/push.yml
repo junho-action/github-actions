@@ -1,4 +1,4 @@
-name: push-workflow1
+name: push-workflow 2
 on: push # push 이벤트에 의해 work flow를 트리거하겠다
 
 jobs:
@@ -9,5 +9,5 @@ jobs:
       run: echo hello world
     - name: step2
       run: |
-        echo hello world2
+        echo hello world
         echo github action
