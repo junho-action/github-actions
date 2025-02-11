@@ -1,0 +1,9 @@
+name: push-workflow
+on: push # push 이벤트에 의해 work flow를 트리거하겠다
+
+jobs:
+  push-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step1
+        run: echo hello world
