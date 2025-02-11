@@ -7,5 +7,6 @@ on:
 jobs:
   path-filter:
     runs-on: ubuntu-latest
-    steps: echo
-    - run: echo hello
+    steps: 
+      name: echo
+      - run: echo hello
